@@ -1,0 +1,49 @@
+@import "components/hero.css";
+@import "components/goto_buttons.css";
+@import "components/avatar.css";
+@import "components/bio.css";
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', cursive;
+  font-weight: lighter;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, a {
+  font-family: 'Reenie Beanie', cursive;
+  font-weight: lighter;
+  transition: all 1s;
+  color: black;
+  opacity: 0.85;
+}
+
+h1 {
+  font-size: 5vw;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    line-height: normal;
+    font-size: 9vw;
+
+  }
+
+  h2 {
+    font-size: 8vw;
+  }
+}
+

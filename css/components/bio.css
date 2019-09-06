@@ -1,0 +1,49 @@
+.bio {
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.bio-title {
+  background-color: #443C3C;
+}
+
+.bio .bio-title, .bio .bio-text {
+  flex: 0 0 50%;
+}
+
+.bio-title h1 {
+  padding: 50vh 0 0 0;
+  color: white;
+}
+
+.bio-text {
+  position: relative;
+}
+
+.bio-text .biography {
+  padding: 4vh 16vh 4vh 16vh;
+  position: absolute;
+  top: 5%;
+  bottom: 5%;
+}
+
+.biography p {
+  font-size: 2vh;
+  line-height: 4vh;
+}
+
+
+@media only screen and (max-width: 812px) {
+  .bio-title {
+    display: none;
+  }
+
+  .bio .bio-text {
+    flex: 0 0 100%;
+  }
+
+  .bio-text .biography {
+    padding: 9vh 2vh 0vh 2vh;
+  }
+}

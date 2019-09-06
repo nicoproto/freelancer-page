@@ -1,0 +1,38 @@
+.goto {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.goto h2 {
+  margin: 0;
+  font-size: 6vh;
+}
+
+.goto i {
+  font-size: 8vh;
+}
+
+.goto:hover {
+  opacity: 0.5;
+}
+
+.goto-left h2 {
+  color: white;
+}
+
+.goto-left a {
+  color: white;
+}
+
+.goto-left {
+  left: 43%;
+}
+
+@media only screen and (max-width: 600px) {
+  .goto {
+    left: 43%;
+  }
+}

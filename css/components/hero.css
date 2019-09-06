@@ -1,0 +1,31 @@
+.hero {
+  height: 100vh;
+  background-image: url('../../images/salar-uyuni.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.hero .box {
+  text-align: center;
+  padding: 40vh 10vh 0vh 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    background-position: bottom;
+  }
+
+  .hero .box {
+    padding: 35vh 8vh 0vh 8vh;
+  }
+
+  .hero .box h1 {
+    width: 100%;
+    border-bottom: none;
+  }
+
+  .hero .box h1 span {
+    padding: 0;
+    line-height: normal;
+  }
+}
