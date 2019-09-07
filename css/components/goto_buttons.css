@@ -31,8 +31,24 @@
   left: 43%;
 }
 
+.goto-right {
+  left: 51%;
+}
+
+.goto-right h2 {
+  color: white;
+}
+
+.goto-right a {
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
   .goto {
     left: 43%;
+  }
+
+  .goto-left {
+    display: none;
   }
 }

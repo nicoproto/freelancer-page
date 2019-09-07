@@ -3,6 +3,8 @@
   background-image: url('../../images/salar-uyuni.jpg');
   background-size: cover;
   position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hero .box {

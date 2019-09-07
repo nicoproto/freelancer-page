@@ -2,6 +2,7 @@
 @import "components/goto_buttons.css";
 @import "components/avatar.css";
 @import "components/bio.css";
+@import "components/skills.css";
 
 body {
   margin: 0;
@@ -33,6 +34,14 @@ h2 {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
 }
 
 @media only screen and (max-width: 600px) {
