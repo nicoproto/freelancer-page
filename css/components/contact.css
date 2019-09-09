@@ -1,0 +1,23 @@
+.contact {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  background-image: url('../../images/road-uyuni.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.contact-info {
+  padding-top: 40vh;
+}
+
+.mail-link  {
+  font-family: 'Open Sans', cursive;
+}
+
+.social-media a {
+  font-size: 8vh;
+  padding: 0 2vh;
+}

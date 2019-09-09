@@ -43,6 +43,10 @@
     background-color: #443C3C;
   }
 
+  .skills .text-skills {
+    flex: 0 0 100%;
+  }
+
   .text-skills h1 {
     text-decoration: underline;
   }

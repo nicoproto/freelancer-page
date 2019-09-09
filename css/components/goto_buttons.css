@@ -43,12 +43,30 @@
   color: white;
 }
 
+.goto-contact {
+  transform: rotate(45deg);
+  left: 50%;
+}
+
+.goto-contact a {
+  color: black;
+}
+
+.goto-contact h2 {
+  color: black;
+}
+
+
 @media only screen and (max-width: 600px) {
   .goto {
     left: 43%;
   }
 
   .goto-left {
+    display: none;
+  }
+
+  .goto-contact {
     display: none;
   }
 }

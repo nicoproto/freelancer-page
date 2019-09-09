@@ -47,9 +47,42 @@
   width: 60%;
   height: 60%;
   margin: 10vh;
+  border-radius: 2px;
 }
 
 .work-card h2, .work-card p {
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  .works-title {
+    display: none;
+  }
+
+  .works .my-works {
+    flex: 0 0 100%;
+  }
+
+  .my-works {
+  background-color: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
