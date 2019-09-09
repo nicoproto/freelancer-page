@@ -4,6 +4,7 @@
 @import "components/hero.css";
 @import "components/goto_buttons.css";
 @import "components/skills.css";
+@import "components/underline.css";
 @import "components/works.css";
 
 body {

@@ -15,10 +15,9 @@
 
 .side-photo {
   width: 100%;
-  background-image: url('../../images/sol-uyuni.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-image: url(../../images/coding-skills.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .tech-skill-list, .soft-skill-list div {

@@ -21,3 +21,13 @@
   font-size: 8vh;
   padding: 0 2vh;
 }
+
+.social-media a:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-info {
+    padding-top: 30vh;
+  }
+}
