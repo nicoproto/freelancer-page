@@ -1,0 +1,13 @@
+#map {
+  width:53%;
+  height: 85%;
+
+}
+
+.mapboxgl-map {
+  font-family: 'Roboto' !important;
+}
+
+.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
+  display: none;
+}

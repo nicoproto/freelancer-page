@@ -1,33 +1,29 @@
 .contact {
-  height: 100vh;
-  position: relative;
-  text-align: center;
-  background-image: url('../../images/road-uyuni.jpg');
+  background-image: url('../../images/pawel-czerwinski-4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
+  height: 100vh;
+  position: relative;
 }
 
-.contact-info {
-  padding-top: 40vh;
+.contact h1{
+  color: white;
 }
 
-.mail-link  {
-  font-family: 'Open Sans', cursive;
+.contact a {
+  font-size: 4em;
+  padding-right: 2%;
+  text-decoration: none;
+  color: #FBF5F3;
 }
 
-.social-media a {
-  font-size: 8vh;
-  padding: 0 2vh;
+.contact-msg {
+  padding: 20vh 0vh 0vh 2vh;
 }
 
-.social-media a:hover {
-  opacity: 0.5;
-}
-
-@media only screen and (max-width: 600px) {
-  .contact-info {
-    padding-top: 30vh;
-  }
+.social-media {
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
 }
