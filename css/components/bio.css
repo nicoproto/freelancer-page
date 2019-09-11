@@ -1,50 +1,50 @@
 .bio {
+  background-image: url('../../images/pawel-czerwinski-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
-  display: flex;
   position: relative;
 }
 
-.bio-title {
-  background-color: #443C3C;
+.bio h1, .bio p, .bio h2 {
+  color: #FBF5F3;
 }
 
-.bio .bio-title, .bio .bio-text {
-  flex: 0 0 50%;
+.bio h2 {
+  font-weight: lighter;
+  writing-mode: vertical-rl;
+  margin: 0;
+  text-align: center;
 }
 
-.bio-title h1 {
-  padding: 50vh 0 0 0;
-  color: white;
+.bio .bio-intro {
+  padding: 20vh 0 0 1vh;
+}
+
+.avatar {
+  height: 30vh;
+  filter: grayscale(100%);
+}
+
+.bio-intro div {
+  display: flex;
+}
+
+.bio-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .bio-text {
-  position: relative;
+  width: 35%;
+  margin-right: 10%;
+  background-color: rgba(0, 0, 0, 0.58);
+  padding: 2%;
 }
 
-.bio-text .biography {
-  padding: 4vh 16vh 4vh 16vh;
-  position: absolute;
-  top: 5%;
-  bottom: 5%;
-}
-
-.biography p {
-  font-size: 2vh;
-  line-height: 4vh;
-}
-
-
-@media only screen and (max-width: 812px) {
-  .bio-title {
-    display: none;
-  }
-
-  .bio .bio-text {
-    flex: 0 0 100%;
-  }
-
-  .bio-text .biography {
-    padding: 9vh 2vh 0vh 2vh;
-  }
-
+.biography {
+  line-height: 1.8em;
+  font-weight: lighter;
 }

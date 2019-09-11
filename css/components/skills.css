@@ -1,4 +1,4 @@
-.skills {
+/*.skills {
   height: 100vh;
   display: flex;
   position: relative;
@@ -15,7 +15,7 @@
 
 .side-photo {
   width: 100%;
-  background-image: url(../../images/coding-skills.jpg);
+  background-image: url(../../images/pawel-czerwinski-2.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -59,3 +59,4 @@
   }
 
 }
+*/

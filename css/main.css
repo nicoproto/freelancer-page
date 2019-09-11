@@ -1,63 +1,34 @@
-@import "components/avatar.css";
 @import "components/bio.css";
 @import "components/contact.css";
 @import "components/hero.css";
-@import "components/goto_buttons.css";
 @import "components/skills.css";
-@import "components/underline.css";
-@import "components/works.css";
+@import "components/projects.css";
+@import "components/location.css";
+@import "components/map.css";
 
 body {
   margin: 0;
+  background-color: #FBF5F3;
 }
 
-p, li {
-  font-family: 'Open Sans', cursive;
+h1, h2, h3, p {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
   font-weight: lighter;
+  font-size: 7vh;
+  margin: 0;
+}
+
+h2 {
+  font-size: 4.5vh;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, a {
-  font-family: 'Reenie Beanie', cursive;
-  font-weight: lighter;
-  transition: all 1s;
-  color: black;
-  opacity: 0.85;
-}
-
-h1 {
-  font-size: 5vw;
-  margin: auto;
-  text-align: center;
-}
-
-h2 {
-  font-size: 3vw;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
-}
-
 @media only screen and (max-width: 600px) {
-  h1 {
-    line-height: normal;
-    font-size: 9vw;
-  }
 
-  h2 {
-    font-size: 8vw;
-  }
 }
-

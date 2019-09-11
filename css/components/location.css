@@ -1,0 +1,10 @@
+.location {
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location h1 {
+  color: #7B1010;
+}

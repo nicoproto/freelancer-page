@@ -1,33 +1,31 @@
 .hero {
-  height: 100vh;
-  background-image: url('../../images/salar-uyuni.jpg');
+  background-image: url('../../images/pawel-czerwinski.jpg');
   background-size: cover;
-  position: relative;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 100vh;
+  position: relative;
 }
 
-.hero .box {
-  text-align: center;
-  padding: 40vh 10vh 0vh 10vh;
+.logo {
+  height: 5vw;
 }
 
-@media only screen and (max-width: 600px) {
-  .hero {
-    background-position: bottom;
-  }
+.hero .logo {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
 
-  .hero .box {
-    padding: 35vh 8vh 0vh 8vh;
-  }
+.hero h1 {
+  color: #FCFCFC;
+  padding: 35vh 0 0 1vh;
+}
 
-  .hero .box h1 {
-    width: 100%;
-    border-bottom: none;
-  }
-
-  .hero .box h1 span {
-    padding: 0;
-    line-height: normal;
-  }
+.hero .arrows {
+  position: absolute;
+  height: 4vw;
+  bottom: 5%;
+  left: 0%;
+  transform: rotate(90deg);
 }
