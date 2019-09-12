@@ -38,7 +38,7 @@
 }
 
 .bio-text {
-  width: 35%;
+  width: 38%;
   margin-right: 10%;
   background-color: rgba(0, 0, 0, 0.58);
   padding: 2%;
@@ -47,4 +47,5 @@
 .biography {
   line-height: 1.8em;
   font-weight: lighter;
+  letter-spacing: 1px;
 }

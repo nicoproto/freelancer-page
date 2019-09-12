@@ -35,32 +35,34 @@
       <h1>projects</h1>
     </div>
 
-    <div class="my-projects">
-      <div class="project-card">
-        <div class="card-description">
-          <h2>Baybe</h2>
-          <p><strong>Your baby gets more, you pay less</strong></p>
-          <p>A marketplace for used refubrished baybe goods, where parents can sell their used products, they get refubrished and sold again new parents.</p>
-        </div>
-        <a href="https://www.baybe.store/" target="_blank">
+    <div class="projects-wrapper">
+      <a href="https://www.baybe.store/" target="_blank">
+        <div class="card" id="card-0">
           <img src="./images/baybe.png" alt="baybe web preview">
-        </a>
-      </div>
-
-      <div class="project-card">
-        <div class="card-description">
-          <h2>Loch Ness</h2>
-          <p><strong>At Loch Ness we believe in second chantes... <br>even for monsters</strong></p>
-          <p>A marketplace for hiring retired monsters, so you can scare your friends and love ones.</p>
+          <div class="story">
+            <div class="info">
+              <h3>Baybe</h3>
+              <p> A marketplace for used refubrished baybe goods, where parents can sell their used products, they get refubrished and sold again new parents.</p>
+            </div>
+          </div>
         </div>
-        <a href="https://usrus.herokuapp.com" target="_blank">
-          <img src="./images/loch-ness.png" alt="loch ness web preview">
-        </a>
-      </div>
+      </a>
+
+      <a href="https://usrus.herokuapp.com" target="_blank">
+        <div class="card" id="card-1">
+              <img src="./images/loch-ness.png" alt="loch ness web preview">
+          <div class="story">
+            <div class="info">
+              <h3>Loch Ness</h3>
+              <p> A marketplace for hiring retired monsters, so you can scare your friends and love ones.</p>
+            </div>
+          </div>
+        </div>
+      </a>
     </div>
+
   </div>
   <!------->
-
 
   <!-- BIO -->
   <div class="bio" id="section-bio">
@@ -112,7 +114,7 @@
   <div class="contact">
     <div class="page-title">
       <img class="arrows" src="./images/white-double-arrow.png" alt="">
-      <h1>about me</h1>
+      <h1>contact</h1>
     </div>
     <div class="contact-msg">
       <img class="logo" src="./images/logo.png" alt="np logo">
@@ -145,19 +147,19 @@
       data: new Uint8Array(size * size * 4),
 
       onAdd: function() {
-      var canvas = document.createElement('canvas');
-      canvas.width = this.width;
-      canvas.height = this.height;
-      this.context = canvas.getContext('2d');
+        var canvas = document.createElement('canvas');
+        canvas.width = this.width;
+        canvas.height = this.height;
+        this.context = canvas.getContext('2d');
       },
 
       render: function() {
-      var duration = 1000;
-      var t = (performance.now() % duration) / duration;
+        var duration = 1000;
+        var t = (performance.now() % duration) / duration;
 
-      var radius = size / 2 * 0.3;
-      var outerRadius = size / 2 * 0.7 * t + radius;
-      var context = this.context;
+        var radius = size / 2 * 0.3;
+        var outerRadius = size / 2 * 0.7 * t + radius;
+        var context = this.context;
 
       // draw outer circle
       context.clearRect(0, 0, this.width, this.height);
@@ -183,14 +185,14 @@
 
       // return `true` to let the map know that the image was updated
       return true;
-      }
-    };
+    }
+  };
 
-    map.on('load', function () {
+  map.on('load', function () {
 
-      map.addImage('pulsing-dot', pulsingDot, { pixelRatio: 2 });
+    map.addImage('pulsing-dot', pulsingDot, { pixelRatio: 2 });
 
-      map.addLayer({
+    map.addLayer({
       "id": "points",
       "type": "symbol",
       "source": {
@@ -209,9 +211,9 @@
       "layout": {
         "icon-image": "pulsing-dot"
       }
-      });
     });
-  </script>
+  });
+</script>
 </body>
 
 

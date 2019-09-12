@@ -1,8 +1,9 @@
 .projects {
   position: relative;
+  height: 90vh;
 }
 
-.projects h1, .projects h2, .projects p {
+.projects h1 {
   color: #7B1010;
 }
 
@@ -15,25 +16,87 @@
   height: 2.5vw;
 }
 
-.my-projects {
-  padding: 6vh;
+.projects-wrapper {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 40%;
+  height: 74%;
+  perspective: 900px;
 }
 
-.project-card {
-  display: flex;
+.card {
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  position: absolute;
+  top: 0%;
   width: 100%;
-  padding-bottom: 4vh;
+  height: 100%;
+  animation: entry 1s linear 1;
+  color: white;
 }
 
-.project-card img {
-  height: 30vw;
+#card-0 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #84cbda 45%, #0f627b2e 100%);
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
 }
 
-.card-description p {
-  font-weight: lighter;
-  line-height: 2em;
-  font-size: 1.4em;
-  margin-right: 8%;
+.card img {
+  width: 100%
+}
+
+#card-1 {
+  background: linear-gradient(to bottom, #315545 30%, #31554559 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 100%;
+  z-index: 0;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+.story {
+  position: absolute;
+  width: 100%;
+}
+
+.story h3 {
+  text-align: center;
+}
+
+.info {
+  position: absolute;
+  top: 10%;
+}
+
+.card p {
+  font-size: 14px;
+  /*color: #fff;*/
+  padding: 0px 20px 20px 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
