@@ -8,7 +8,7 @@
 }
 
 .logo {
-  height: 5vw;
+  height: 9vh;
 }
 
 .hero .logo {
@@ -24,7 +24,7 @@
 
 .hero .arrows {
   position: absolute;
-  height: 4vw;
+  height: 5vh;
   bottom: 5%;
   left: 0%;
   transform: rotate(90deg);

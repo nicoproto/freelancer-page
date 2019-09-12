@@ -8,3 +8,14 @@
 .location h1 {
   color: #7B1010;
 }
+
+@media only screen and (max-width: 600px) {
+  .location {
+    display: block;
+  }
+
+  .location h1 {
+    font-size: 5vh;
+    margin: 3vh 0;
+  }
+}
