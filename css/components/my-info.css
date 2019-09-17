@@ -1,0 +1,72 @@
+.contact {
+  background-image: url('../../images/pawel-czerwinski-4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+.contact h1{
+  color: white;
+}
+
+.contact-msg {
+  padding: 20vh 0vh 0vh 2vh;
+}
+
+.social-media {
+  position: absolute;
+    bottom: 0%;
+    left: -3%;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+ul li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #FBF5F3;
+  transition: .5s;
+}
+
+ul li a:hover {
+  color: #ffffffc4;
+  box-shadow: 0 0 16px #fffefe;
+  text-shadow: 0 0 5px #fffefe;
+}
+
+@media only screen and (max-width: 850px) and (orientation : landscape) {
+  .contact {
+    background-size: 100% auto;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    background-position-x: center;
+    background-attachment: scroll;
+  }
+
+  .social-media {
+    left: 2%;
+  }
+
+  .contact-msg {
+    padding: 28vh 0vh 0vh 2vh;
+  }
+}

@@ -50,9 +50,29 @@
   letter-spacing: 1px;
 }
 
+@media only screen and (max-width: 900px) and (orientation : landscape){
+  .bio-info {
+    align-items: flex-start;
+  }
+
+  .bio-text {
+    width: 66%;
+    margin-right: 6%;
+    margin-bottom: 4%;
+  }
+
+  .bio {
+    height: 100%;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+  }
+}
+
 @media only screen and (max-width: 600px){
   .bio {
     height: 100%;
+    background-position-x: right;
+    background-attachment: scroll;
   }
 
   .bio-info {
@@ -70,7 +90,8 @@
 
   .bio-text {
     width: 100%;
-    /*margin-top: 2%*/;
+    margin-top: 0%;
+    padding: 0%;
   }
 
   .bio-text p {

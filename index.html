@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="icon" href="./images/favicon.png">
   <!-- MAPBOX -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
@@ -20,7 +21,7 @@
       <br>let’s
       <br>create
       <br>awesome
-      <br>things
+      <br>products
     </h1>
     <a href="#section-projects">
       <img class="arrows" src="./images/white-double-arrow.png" alt="link to biography">
@@ -42,7 +43,7 @@
           <div class="story">
             <div class="info">
               <h3>Baybe</h3>
-              <p> A marketplace for used refubrished baybe goods, where parents can sell their used products, they get refubrished and sold again new parents.</p>
+              <p> A marketplace for used refubrished baybe goods, where parents can sell their used products, they get refubrished and sold again to new parents.</p>
             </div>
           </div>
         </div>
@@ -59,6 +60,13 @@
           </div>
         </div>
       </a>
+      <div class="hover-msg">
+        <h4>Hover on a project</h4>
+        <ul>
+          <li> <<< </li>
+          <li> >>> </li>
+        </ul>
+      </div>
     </div>
 
   </div>
@@ -122,12 +130,26 @@
         <br>start your
         <br>new project?
       </h1>
-      <div class="social-media">
-        <a href="https://github.com/nico1711" class="fab fa-github" target="_blank"></a>
-        <a href="https://www.linkedin.com/in/nicolas-proto/" class="fab fa-linkedin-in" target="_blank"></a>
-        <a href="mailto:nicolasproto@gmail.com" class="fas fa-envelope"></a>
-      </div>
     </div>
+      <div class="social-media">
+        <ul>
+          <li>
+            <a href="https://github.com/nico1711" target="_blank">
+            <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/nicolas-proto/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:nicolasproto@gmail.com" target="_blank">
+            <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
   </div>
   <!------->
 
@@ -136,7 +158,7 @@
     var map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/nproto/ck0f46af7054e1cqfipb5bwnb', // stylesheet location
-      center: [2.1734, 41.3851], // starting position [lng, lat]
+      center: [15.979120, 45.809491], // starting position [lng, lat]
       zoom: 10 // starting zoom
     });
 
@@ -203,7 +225,7 @@
             "type": "Feature",
             "geometry": {
               "type": "Point",
-              "coordinates": [2.1734, 41.3851]
+              "coordinates": [15.979120, 45.809491]
             }
           }]
         }
@@ -213,7 +235,7 @@
       }
     });
   });
-</script>
+  </script>
 </body>
 
 

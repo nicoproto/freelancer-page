@@ -5,6 +5,7 @@
   background-attachment: fixed;
   height: 100vh;
   position: relative;
+  background-position-x: center;
 }
 
 .logo {
@@ -28,4 +29,16 @@
   bottom: 5%;
   left: 0%;
   transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 850px) and (orientation : landscape) {
+  .hero {
+    background-size: 100% auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+  background-attachment: scroll;
+  }
 }
