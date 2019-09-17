@@ -1,10 +1,10 @@
 @import "components/bio.css";
 @import "components/hero.css";
-@import "components/skills.css";
-@import "components/projects.css";
 @import "components/location.css";
 @import "components/map.css";
 @import "components/my-info.css";
+@import "components/projects.css";
+@import "components/skills.css";
 
 body {
   margin: 0;
@@ -32,6 +32,7 @@ html {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 @media only screen and (max-width: 600px) {
