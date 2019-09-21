@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+
+  <!-- META DESCRIPTION -->
   <title>nico proto Web Developer</title>
   <meta name="description" content="Hi! My name is Nicolás Proto and I'm a Full-Stack Web developer craving to build awesome products. I’m specialized on Ruby, JavaScript, (S) CSS, HTML and SQL.">
   <meta name="keywords" content="Full Stack development, Ruby, CSS, HTML, Rails, CSS, Lean Design, Marketing, Web Development, Startups, Leadership ">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta charset="UTF-8">
+  <!-- FONTS, ICONS & CSS-->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -31,7 +34,6 @@
       <img class="arrows" src="./images/white-double-arrow.png" alt="link to biography">
     </a>
   </div>
-  <!------->
 
   <!-- PROJECTS -->
   <div class="projects" id="section-projects">
@@ -47,7 +49,7 @@
           <div class="story">
             <div class="info">
               <h3>Baybe</h3>
-              <p> A marketplace for used refubrished baybe goods, where parents can sell their used products, they get refubrished and sold again to new parents.</p>
+              <p> A marketplace for refurbished baby goods.  Where parents can sell their used products, the products are refurbished, and then sold again to new parents.</p>
             </div>
           </div>
         </div>
@@ -59,11 +61,12 @@
           <div class="story">
             <div class="info">
               <h3>Loch Ness</h3>
-              <p> A marketplace for hiring retired monsters, so you can scare your friends and love ones.</p>
+              <p> A marketplace for hiring retired monsters, so you can scare your friends and loved ones.</p>
             </div>
           </div>
         </div>
       </a>
+
       <div class="hover-msg">
         <h4>Hover on a project</h4>
         <ul>
@@ -72,9 +75,7 @@
         </ul>
       </div>
     </div>
-
   </div>
-  <!------->
 
   <!-- BIO -->
   <div class="bio" id="section-bio">
@@ -99,18 +100,16 @@
       <div class="bio-text">
         <div class="biography">
           <p>
-            I am an <strong><a href="https://en.wikipedia.org/wiki/Uruguay" target="_blank">Uruguayan</a></strong> who started their studies focusing on understanding the clients needs in the field of <strong><a href="https://www.ort.edu.uy/" target="_blank">Marketing</a></strong>. After that, I decided that I wanted to go one step more and being able to understand every department of a company so I got my <strong><a href="https://www.ort.edu.uy/" target="_blank">B</strong>achelor of <strong>B</strong>usiness <strong>A</strong>dministration</a> where I graduated with honors.
+            I'm from <strong><a href="https://en.wikipedia.org/wiki/Uruguay" target="_blank">Uruguay</a></strong> and originally started my studies focused on understanding client needs in the field of <strong><a href="https://www.ort.edu.uy/" target="_blank">Marketing</a></strong>.  After that, I wanted to go a step further and understand all aspects of a company holistically, so I got my <strong><a href="https://www.ort.edu.uy/" target="_blank">B</strong>achelor of <strong>B</strong>usiness <strong>A</strong>dministration</a> and graduated with honors.
             <br><br>
-            After working for some years on a startup company and helping the team to make it a fast-food chain with more than 10 stores, I decided to go a step further and getting the required hard skills to being able to create products from scratch in an area that I discover a great passion... <strong>coding</strong>. Achieving that would make me able to complete my knowledge in terms of building a company (marketing, management and hard skills).
+            After working some years in a startup company and helping the team to make it a fast-food chain with more than 10 stores, I decided to pursue the technical skills needed to create products from scratch in an area I soon found a great passion... <strong>coding</strong>. By achieving that I'd finally have the skill set and knowledge to build out a company (marketing, management, and technical skills).
             <br><br>
-            That's when I decided to enroll myself on <strong><a href="https://www.lewagon.com/" target="_blank">Le Wagon</a></strong> and become a <strong>Full-Stack Web developer</strong>.
+            That's when I decided to enroll myself in <strong><a href="https://www.lewagon.com/" target="_blank">Le Wagon</a></strong>, a coding school, and become a <strong>Full-Stack Web developer</strong>.
           </p>
         </div>
       </div>
     </div>
-
   </div>
-  <!------->
 
   <!-- LOCATION -->
   <div class="location" id="section-location">
@@ -120,7 +119,6 @@
     </div>
     <div id='map'></div>
   </div>
-  <!------->
 
   <!-- CONTACT -->
   <div class="contact">
@@ -155,101 +153,7 @@
         </ul>
       </div>
   </div>
-  <!------->
 
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoibnByb3RvIiwiYSI6ImNqeWsydWZ2cTA5aW4zbW12NTJocjRjenAifQ.jQLupKusfAYC5PYAESn9uw';
-    var map = new mapboxgl.Map({
-      container: 'map', // container id
-      style: 'mapbox://styles/nproto/ck0f46af7054e1cqfipb5bwnb', // stylesheet location
-      center: [15.979120, 45.809491], // starting position [lng, lat]
-      zoom: 10 // starting zoom
-    });
-
-    var size = 100;
-    var pulsingDot = {
-      width: size,
-      height: size,
-      data: new Uint8Array(size * size * 4),
-
-      onAdd: function() {
-        var canvas = document.createElement('canvas');
-        canvas.width = this.width;
-        canvas.height = this.height;
-        this.context = canvas.getContext('2d');
-      },
-
-      render: function() {
-        var duration = 1000;
-        var t = (performance.now() % duration) / duration;
-
-        var radius = size / 2 * 0.3;
-        var outerRadius = size / 2 * 0.7 * t + radius;
-        var context = this.context;
-
-      // draw outer circle
-      context.clearRect(0, 0, this.width, this.height);
-      context.beginPath();
-      context.arc(this.width / 2, this.height / 2, outerRadius, 0, Math.PI * 2);
-      context.fillStyle = 'rgba(255, 200, 200,' + (1 - t) + ')';
-      context.fill();
-
-      // draw inner circle
-      context.beginPath();
-      context.arc(this.width / 2, this.height / 2, radius, 0, Math.PI * 2);
-      context.fillStyle = 'rgba(255, 100, 100, 1)';
-      context.strokeStyle = 'white';
-      context.lineWidth = 2 + 4 * (1 - t);
-      context.fill();
-      context.stroke();
-
-      // update this image's data with data from the canvas
-      this.data = context.getImageData(0, 0, this.width, this.height).data;
-
-      // keep the map repainting
-      map.triggerRepaint();
-
-      // return `true` to let the map know that the image was updated
-      return true;
-    }
-  };
-
-  map.on('load', function () {
-
-    map.addImage('pulsing-dot', pulsingDot, { pixelRatio: 2 });
-
-    map.addLayer({
-      "id": "points",
-      "type": "symbol",
-      "source": {
-        "type": "geojson",
-        "data": {
-          "type": "FeatureCollection",
-          "features": [{
-            "type": "Feature",
-            "geometry": {
-              "type": "Point",
-              "coordinates": [15.979120, 45.809491]
-            }
-          }]
-        }
-      },
-      "layout": {
-        "icon-image": "pulsing-dot"
-      }
-    });
-  });
-  </script>
+  <!-- JS -->
+  <script type="text/javascript" src="js/mapbox.js"></script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
