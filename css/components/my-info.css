@@ -32,13 +32,13 @@ ul li {
 
 ul li a {
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 8vh;
+  height: 8vh;
   text-align: center;
-  line-height: 63px;
+  line-height: 8vh;
   background: #333;
   border-radius: 50%;
-  font-size: 30px;
+  font-size: 4vh;
   color: #FBF5F3;
   transition: .5s;
 }
@@ -51,7 +51,7 @@ ul li a:hover {
 
 @media only screen and (max-width: 850px) and (orientation : landscape) {
   .contact {
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-attachment: scroll;
   }
 }
@@ -64,6 +64,11 @@ ul li a:hover {
 
   .social-media {
     left: 2%;
+
+  }
+
+  .social-media ul {
+    padding-left: 0;
   }
 
   .contact-msg {
