@@ -19,7 +19,7 @@
 }
 
 .bio .bio-intro {
-  padding: 20vh 0 0 1vh;
+  padding: 20vh 0 3vh 8vh;
 }
 
 .avatar {
@@ -81,6 +81,7 @@
 
   .bio .bio-intro {
     padding-top: 0;
+    padding-left: 1vh;
   }
 
   .bio-intro h1 {

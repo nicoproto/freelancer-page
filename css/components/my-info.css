@@ -12,13 +12,12 @@
 }
 
 .contact-msg {
-  padding: 20vh 0vh 0vh 2vh;
+  padding: 20vh 0vh 0vh 8vh;
 }
 
 .social-media {
   position: absolute;
     bottom: 0%;
-    left: -3%;
 }
 
 ul {

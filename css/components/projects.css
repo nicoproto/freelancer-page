@@ -5,6 +5,7 @@
 .page-title {
   display: flex;
   align-items: center;
+  padding: 2vh 0 0 8vh;
 }
 
 .page-title img {
@@ -175,5 +176,9 @@ h4 {
 
   .hover-msg {
     display: none;
+  }
+
+  .page-title {
+    padding-left: 1vh;
   }
 }
