@@ -39,6 +39,12 @@
 
 @media only screen and (max-width: 600px) {
   .hero {
+    background-attachment: scroll;
+  }
+}
+
+@media (hover: none) {
+  .hero {
   background-attachment: scroll;
   }
 }
