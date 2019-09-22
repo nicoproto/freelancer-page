@@ -11,6 +11,10 @@
   color: #FBF5F3;
 }
 
+.bio h1, .bio h2 {
+  text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
 .bio h2 {
   font-weight: lighter;
   writing-mode: vertical-rl;
@@ -80,8 +84,8 @@
   }
 
   .bio .bio-intro {
-    padding-top: 0;
-    padding-left: 1vh;
+    padding-top: 2vh;
+    padding-left: 2vh;
   }
 
   .bio-intro h1 {

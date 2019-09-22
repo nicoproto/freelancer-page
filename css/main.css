@@ -11,7 +11,12 @@ body {
   background-color: #FBF5F3;
 }
 
-h1, h2, h3, p {
+h1, h2, h3 {
+  transition: all 0.5s;
+  font-family: 'Squada One', cursive;
+}
+
+p {
   transition: all 0.5s;
   font-family: 'Roboto', sans-serif;
 }

@@ -1,6 +1,7 @@
 #map {
   width:53%;
   height: 85%;
+  position: relative;
 }
 
 .mapboxgl-map {
@@ -11,10 +12,44 @@
   display: none;
 }
 
+.find-me {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 15%;
+  height: 100%;
+  background: #ca2123b0;;
+  color: white;
+  border: none;
+  transition: .5s all ease;
+}
+
+.find-me span {
+  font-family: 'Squada One', cursive;
+  font-size: 4vh;
+}
+
+.find-me:hover {
+  background: #ca2123;
+  letter-spacing: 2px;
+}
+
+.find-me:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 600px) {
   #map {
     width: 98%;
     height: 60%;
     margin: 1%;
+  }
+
+  .find-me {
+    width: 100%;
+    height: auto;
+  }
+  .find-me br{
+    display: none;
   }
 }

@@ -21,6 +21,7 @@
 .hero h1 {
   color: #FCFCFC;
   padding: 35vh 0 0 8vh;
+  text-shadow: 0px 0px 4px rgb(0, 0, 0);
 }
 
 .hero .arrows {
@@ -42,11 +43,11 @@
     background-attachment: scroll;
   }
   .hero h1 {
-    padding-left: 1vh;
+    padding-left: 2vh;
   }
 
   .hero .arrows {
-    left: 0vh;
+    left: 1vh;
   }
 
   .hero .logo {
