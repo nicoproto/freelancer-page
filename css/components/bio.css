@@ -1,8 +1,8 @@
 .bio {
-  background-image: url('../../images/pawel-czerwinski-2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-image: url('../../images/pawel-czerwinski-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   position: relative;
 }
@@ -17,9 +17,9 @@
 
 .bio h2 {
   font-weight: lighter;
-  writing-mode: vertical-rl;
   margin: 0;
   text-align: center;
+  writing-mode: vertical-rl;
 }
 
 .bio .bio-intro {
@@ -36,22 +36,22 @@
 }
 
 .bio-info {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .bio-text {
-  width: 38%;
-  margin-right: 6%;
   background-color: rgba(0, 0, 0, 0.58);
+  margin-right: 6%;
   padding: 2%;
+  width: 38%;
 }
 
 .biography {
-  line-height: 1.8em;
   font-weight: lighter;
   letter-spacing: 1px;
+  line-height: 1.8em;
 }
 
 @media only screen and (max-width: 900px) and (orientation : landscape){
@@ -60,23 +60,23 @@
   }
 
   .bio-text {
-    width: 66%;
-    margin-right: 6%;
     margin-bottom: 4%;
+    margin-right: 6%;
+    width: 66%;
   }
 
   .bio {
-    height: 100%;
-    background-size: 100% 100%;
     background-attachment: scroll;
+    background-size: 100% 100%;
+    height: 100%;
   }
 }
 
 @media only screen and (max-width: 600px){
   .bio {
-    height: 100%;
-    background-position-x: right;
     background-attachment: scroll;
+    background-position-x: right;
+    height: 100%;
   }
 
   .bio-info {
@@ -84,8 +84,8 @@
   }
 
   .bio .bio-intro {
-    padding-top: 2vh;
     padding-left: 2vh;
+    padding-top: 2vh;
   }
 
   .bio-intro h1 {
@@ -94,9 +94,9 @@
   }
 
   .bio-text {
-    width: 100%;
     margin-top: 0%;
     padding: 0%;
+    width: 100%;
   }
 
   .bio-text p {
@@ -107,9 +107,9 @@
 
 @media (hover: none) {
   .bio {
-    height: 100%;
-    background-position-x: right;
     background-attachment: scroll;
+    background-position-x: right;
+    height: 100%;
   }
 }
 

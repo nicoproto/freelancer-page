@@ -3,8 +3,8 @@
 }
 
 .page-title {
-  display: flex;
   align-items: center;
+  display: flex;
   padding: 2vh 0 0 8vh;
 }
 
@@ -13,20 +13,20 @@
 }
 
 .projects-wrapper {
+  display: flex;
   perspective: 900px;
   margin: 4vh 0vh 16vh 8vh;
-  display: flex;
 }
 
 .card {
+  animation: entry 1s linear 1;
+  box-shadow: 0px 20px 50px #555;
+  color: white;
+  height: 100%;
+  perspective: 900px;
   transition: .5s all ease;
   transform: rotateX(60deg) scale(0.7);
-  perspective: 900px;
-  box-shadow: 0px 20px 50px #555;
   width: 90%;
-  height: 100%;
-  animation: entry 1s linear 1;
-  color: white;
 }
 
 #card-0 {
@@ -58,64 +58,63 @@
 
 .card p {
   font-size: 14px;
-  padding: 0px 20px 20px 20px;
-  line-height: 150%;
-  text-align: center;
   letter-spacing: 1px;
+  line-height: 150%;
+  padding: 0px 20px 20px 20px;
+  text-align: center;
 }
 
 .hover-msg {
-  position: absolute;
   bottom: -25%;
+  position: absolute;
   width: 100%;
 }
 
 .projects li {
+  color: #111;
+  list-style: none;
   position: absolute;
   top: 0%;
-  list-style: none;
-  color: #111;
 }
 
 .projects li:nth-child(1) {
-  left: 30%;
   animation: left-move 1s linear infinite;
+  left: 30%;
 }
 
 .projects li:nth-child(2) {
-  right: 30%;
   animation: right-move 1s linear infinite;
+  right: 30%;
 }
 
 h4 {
+  color: #111;
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
-  color: #111;
   letter-spacing: 2px;
   margin: 0;
-
   text-align: center;
 }
 
 @keyframes left-move {
   50% {
-    transform: translateX(10px);
     opacity: 0.5;
+    transform: translateX(10px);
   }
   100% {
-    transform: translateX(10px);
     opacity: 0;
+    transform: translateX(10px);
   }
 }
 
 @keyframes right-move {
   50% {
-    transform: translateX(-10px);
     opacity: 0.5;
+    transform: translateX(-10px);
   }
   100% {
-    transform: translateX(-10px);
     opacity: 0;
+    transform: translateX(-10px);
   }
 }
 
@@ -158,15 +157,15 @@ h4 {
 
 @media only screen and (max-width: 600px) {
   .card {
-    transform: none;
     margin-bottom: 4vh;
+    transform: none;
   }
 
   .projects-wrapper {
-    width: 80%;
-    height: 48%;
     display: block;
+    height: 48%;
     margin: 4vh 0vh 8vh 8vh;
+    width: 80%;
   }
 
   #card-1 {

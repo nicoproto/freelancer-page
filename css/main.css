@@ -6,38 +6,40 @@
 @import "components/projects.css";
 @import "components/skills.css";
 
-body {
-  margin: 0;
-  background-color: #FBF5F3;
-}
-
-h1, h2, h3 {
-  transition: all 0.5s;
-  font-family: 'Squada One', cursive;
-}
-
-p {
-  transition: all 0.5s;
-  font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  font-weight: lighter;
-  font-size: 7vh;
-  margin: 0;
-}
-
-h2 {
-  font-size: 4.5vh;
+* {
+  transition: all 1s;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #FBF5F3;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Squada One', cursive;
+}
+
+h1 {
+  font-size: 7vh;
+  font-weight: lighter;
+  margin: auto 0;
+}
+
+h2 {
+  font-size: 4.5vh;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,8 +1,8 @@
 .contact {
-  background-image: url('../../images/pawel-czerwinski-4.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-image: url('../../images/pawel-czerwinski-4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   position: relative;
 }
@@ -17,8 +17,8 @@
 }
 
 .social-media {
+  bottom: 0%;
   position: absolute;
-    bottom: 0%;
 }
 
 .contact .logo {
@@ -35,16 +35,16 @@ ul li {
 }
 
 ul li a {
-  display: block;
-  width: 8vh;
-  height: 8vh;
-  text-align: center;
-  line-height: 8vh;
   background: #333;
   border-radius: 50%;
-  font-size: 4vh;
   color: #FBF5F3;
+  display: block;
+  font-size: 4vh;
+  height: 8vh;
+  line-height: 8vh;
+  text-align: center;
   transition: .5s;
+  width: 8vh;
 }
 
 ul li a:hover {
@@ -55,22 +55,22 @@ ul li a:hover {
 
 @media only screen and (max-width: 850px) and (orientation : landscape) {
   .contact {
-    background-size: 100% 100%;
     background-attachment: scroll;
+    background-size: 100% 100%;
   }
 }
 
 @media (hover: none) {
   .contact {
-    background-position-x: center;
     background-attachment: scroll;
+    background-position-x: center;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .contact {
-    background-position-x: center;
     background-attachment: scroll;
+    background-position-x: center;
   }
 
   .social-media {

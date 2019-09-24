@@ -1,7 +1,7 @@
 #map {
-  width:53%;
   height: 85%;
   position: relative;
+  width:53%;
 }
 
 .mapboxgl-map {
@@ -13,15 +13,15 @@
 }
 
 .find-me {
-  position: absolute;
-  left: 0;
-  z-index: 1;
-  width: 15%;
-  height: 100%;
   background: #ca2123b0;;
   color: white;
   border: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
   transition: .5s all ease;
+  width: 15%;
+  z-index: 1;
 }
 
 .find-me span {
@@ -40,14 +40,14 @@
 
 @media only screen and (max-width: 600px) {
   #map {
-    width: 98%;
     height: 60%;
     margin: 1%;
+    width: 98%;
   }
 
   .find-me {
-    width: 100%;
     height: auto;
+    width: 100%;
   }
   .find-me br{
     display: none;
