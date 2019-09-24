@@ -23,11 +23,11 @@
 }
 
 .bio .bio-intro {
-  padding: 20vh 0 3vh 8vh;
+  padding: 10vh 0 3vh 8vh;
 }
 
 .avatar {
-  height: 30vh;
+  height: 40vh;
   filter: grayscale(100%);
 }
 
@@ -52,6 +52,11 @@
   font-weight: lighter;
   letter-spacing: 1px;
   line-height: 1.8em;
+}
+
+.biography p {
+  max-height: 100vh;
+  overflow: scroll;
 }
 
 @media only screen and (max-width: 900px) and (orientation : landscape){
