@@ -4,7 +4,6 @@
 @import "components/map.css";
 @import "components/my-info.css";
 @import "components/projects.css";
-@import "components/skills.css";
 
 * {
   transition: all 1s;
