@@ -1,0 +1,98 @@
+.loader {
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  animation: backgroundChange .5s linear 3s forwards, fadeOut .5s linear 5s forwards
+}
+
+.load-text {
+  font-family: 'Squada One', cursive;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 10vmax;
+  width: fit-content;
+  display: flex;
+  animation: colorChange .5s linear 3s forwards;
+}
+
+.loaded-text {
+  font-family: 'Squada One', cursive;
+  transform: scale(1.5);
+  animation: scaleText .5s linear .5s forwards;
+
+}
+
+.loaded-text::after {
+  animation: textChange 3s linear;
+  display: block;
+  content: "{n";
+}
+
+
+.loading-text {
+  font-family: 'Squada One', cursive;
+  width: 0;
+  overflow: hidden;
+  animation: expand .5s linear 1.5s forwards;
+}
+
+/* CSS specific to iOS devices */
+@supports (-webkit-overflow-scrolling: touch) {
+  .loading-text {
+
+  }
+}
+
+
+@keyframes scaleText {
+  from {transform: scale(1.5)}
+  to {transform: scale(1)}
+}
+
+@keyframes expand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 38vmax;
+  }
+}
+
+@keyframes textChange {
+  0% {
+    content: "{n}";
+  }
+  50% {
+    color: white;
+
+  }
+  /*100% {
+    content: "{n";
+  }*/
+
+}
+
+@keyframes backgroundChange {
+  from {background-color: white}
+  to {background-color: black}
+}
+
+@keyframes colorChange {
+  from {color: black}
+  to {color: white}
+}
+
+@keyframes fadeOut {
+  from {opacity: 1}
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
