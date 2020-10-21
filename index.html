@@ -190,7 +190,7 @@
     mapboxgl.accessToken = 'pk.eyJ1IjoibnByb3RvIiwiYSI6ImNqeWsydWZ2cTA5aW4zbW12NTJocjRjenAifQ.jQLupKusfAYC5PYAESn9uw';
 
     var start = [15.979120, 45.809491];
-    var end = [144.9843278, -37.8136276];
+    var end = [28.9784, 41.0082];
 
     var map = new mapboxgl.Map({
       container: 'map', // container id
@@ -283,8 +283,8 @@
 
     map.on('load', function () {
       const current_location = {
-        latitude: 144.9843278,
-        longitude: -37.8136276
+        latitude: 28.9784,
+        longitude: 41.0082
       }
 
       map.addImage('pulsing-dot', pulsingDot, { pixelRatio: 2 });
@@ -323,12 +323,7 @@
                 "circle-opacity": 0.5,
                 "circle-stroke-width": 0,
             }
-
         });
-
     });
-
   </script>
-
-  <!-- <script type="text/javascript" src="js/mapbox.js"></script> -->
 </body>
