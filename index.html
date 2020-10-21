@@ -186,5 +186,149 @@
   </div>
 
   <!-- JS -->
-  <script type="text/javascript" src="js/mapbox.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibnByb3RvIiwiYSI6ImNqeWsydWZ2cTA5aW4zbW12NTJocjRjenAifQ.jQLupKusfAYC5PYAESn9uw';
+
+    var start = [15.979120, 45.809491];
+    var end = [144.9843278, -37.8136276];
+
+    var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/nproto/ck0f46af7054e1cqfipb5bwnb', // stylesheet location
+      center: start, // starting position [lng, lat]
+      zoom: 0 // starting zoom
+    });
+
+
+    // -----WHERE I AM BUTTON--------
+    var isAtStart = true;
+
+    document.getElementById('fly').addEventListener('click', function() {
+    // depending on whether we're currently at point a or b, aim for
+    // point a or b
+    var target = end;
+
+    // and now we're at the opposite point
+    isAtStart = !isAtStart;
+
+    map.flyTo({
+    // These options control the ending camera position: centered at
+    // the target, at zoom level 9, and north up.
+    center: target,
+    zoom: 7,
+    bearing: 0,
+
+    // These options control the flight curve, making it move
+    // slowly and zoom out almost completely before starting
+    // to pan.
+    speed: 2, // make the flying slow
+    curve: 1, // change the speed at which it zooms out
+
+    // This can be any easing function: it takes a number between
+    // 0 and 1 and returns another number between 0 and 1.
+    easing: function (t) { return t; }
+    });
+    });
+
+
+    // -----PULSING LOCATION DOT---------
+
+    var size = 100;
+    var pulsingDot = {
+      width: size,
+      height: size,
+      data: new Uint8Array(size * size * 4),
+
+      onAdd: function() {
+        var canvas = document.createElement('canvas');
+        canvas.width = this.width;
+        canvas.height = this.height;
+        this.context = canvas.getContext('2d');
+      },
+
+      render: function() {
+        var duration = 1000;
+        var t = (performance.now() % duration) / duration;
+
+        var radius = size / 2 * 0.3;
+        var outerRadius = size / 2 * 0.7 * t + radius;
+        var context = this.context;
+
+        // draw outer circle
+        context.clearRect(0, 0, this.width, this.height);
+        context.beginPath();
+        context.arc(this.width / 2, this.height / 2, outerRadius, 0, Math.PI * 2);
+        context.fillStyle = 'rgba(255, 200, 200,' + (1 - t) + ')';
+        context.fill();
+
+        // draw inner circle
+        context.beginPath();
+        context.arc(this.width / 2, this.height / 2, radius, 0, Math.PI * 2);
+        context.fillStyle = 'rgba(255, 100, 100, 1)';
+        context.strokeStyle = 'white';
+        context.lineWidth = 2 + 4 * (1 - t);
+        context.fill();
+        context.stroke();
+
+        // update this image's data with data from the canvas
+        this.data = context.getImageData(0, 0, this.width, this.height).data;
+
+        // keep the map repainting
+        map.triggerRepaint();
+
+        // return `true` to let the map know that the image was updated
+        return true;
+      }
+    };
+
+    map.on('load', function () {
+      const current_location = {
+        latitude: 144.9843278,
+        longitude: -37.8136276
+      }
+
+      map.addImage('pulsing-dot', pulsingDot, { pixelRatio: 2 });
+
+
+      map.addSource('markers', {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": [{
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [current_location.latitude, current_location.longitude]
+                  },
+                  "properties": {
+                      "modelId": 1,
+                  },
+                }]
+            }
+        });
+
+      map.addLayer({
+            "id": "circles1",
+            "source": "markers",
+            "type": "circle",
+            "paint": {
+                "circle-radius": {
+                  'base': 1.75,
+                  'stops': [
+                    [4, 10],
+                    [22, 2400]
+                  ]
+                },
+                "circle-color": "#007cbf",
+                "circle-opacity": 0.5,
+                "circle-stroke-width": 0,
+            }
+
+        });
+
+    });
+
+  </script>
+
+  <!-- <script type="text/javascript" src="js/mapbox.js"></script> -->
 </body>
